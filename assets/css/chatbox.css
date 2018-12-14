@@ -1,0 +1,193 @@
+body{
+    padding: 15px;
+    background-color: #fefefe;
+}
+#chatBox{
+    box-shadow: 1px 1px 12px #555;
+    
+    border-radius: 10px;
+}
+#chatBox div#titreDesktop{
+    display: none;
+}
+#chatBox header{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#chatBox header .fa-minus{
+      display: none;
+      cursor: pointer;
+}
+#chatBox header .fa-times{
+      cursor: pointer;
+    }
+#chatBox header div#blocProfile{
+    position: relative;
+    top: 20px;
+}
+#chatBox header img.imgProfile{
+    height: 38px;
+}
+#chatBox header img#imgProfileTop{
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+/* Fin du header chatBox */
+
+/* Début de la section chatBox */
+#chatBox section{
+    background-color: #f2f2f4;
+    padding: 50px 15px 15px 22px;
+    overflow: scroll;
+}
+#chatBox section div.messageAuto, #chatBox section div.blocUtilisateur{
+    margin-bottom: 26px;
+}
+#chatBox section div.messageAuto p.contenu{
+    border-left: 1px solid #1ac74d;
+    padding-left: 15px;
+    margin-bottom: 11px;
+}
+#chatBox section div.messageAuto p.heure{
+    padding-left: 15px;
+    text-decoration: none;
+}
+/* Fin message automatique */
+/* Debut message utilisateur */ 
+#chatBox section div.blocUtilisateur div.messageUtilisateur h3{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#chatBox section div.blocUtilisateur div.messageUtilisateur{
+    background-color: #fff;
+    padding: 15px 0 10px 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+#chatBox section div.blocUtilisateur p.heure{
+    text-align: right;
+}
+#chatBox section div.blocReponse{
+    display: none;
+}
+/* Fin message utilisateur */
+/* bloc write*/
+#chatBox section span#writeMobile{
+    background-color: #ebebef;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+#chatBox section span#writeDesktop{
+    display: none;
+}
+/* Fin section chatBox */
+/* Debut du footer chatBox*/
+#chatBox footer{
+    padding: 15px;
+}
+#chatBox footer form{
+    display: flex;
+    justify-content: space-between;
+}
+#chatBox footer input#message{
+    width: 95%;
+    border: none;
+}
+#chatBox footer button#send{
+    border: none;
+    background-color: #1ac74d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* 
+    FIN DE LA PARTIE MOBILE
+*/
+@media screen and (min-width: 640px) {
+  #chatBox{
+      position: fixed;
+      bottom: 10px;
+      right: 30px;
+      width: 308px;
+  }
+  #chatBox div#titreDesktop{
+      display: block;
+      width: 105px;
+      color: #dfdfe3;
+      font-size: 10px;
+  }
+  #chatBox div#titreDesktop span{
+      font-size: 13px;
+      font-weight: bold;
+  }
+  #chatBox header .fa-angle-down{
+      display: none;
+  }
+  #chatBox header .fa-minus{
+      display: block;
+      color: #dfdfe3;
+      cursor: pointer;
+  }
+  #chatBox header .fa-times{
+      color: #dfdfe3;
+  }
+  /* Fin chatBox header Desktop */
+  #chatBox section{
+      
+    height: 400px;
+  }
+  #chatBox section div.blocReponse{
+    display: flex;
+  }
+  #chatBox section div.blocReponse img{
+    height: 38px;
+  }
+  #chatBox section div.blocReponse div.messageUtilisateur{
+    background-color: #1ac74d;
+    color: #fff;
+    padding: 15px 5px 10px 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+  }
+  #chatBox section div.blocReponse div.headerBlocReponse{
+      display: flex;
+      justify-content: space-between;
+  }
+  #chatBox section span#writeMobile{
+      display: none;
+  }
+  #chatBox section span#writeDesktop{
+      display: block;
+      color: #dfdfe3;
+  }
+}
+/* Fin chatBox desktop*/
+#chatBoxMin{
+    display: none;
+}
+#chatBoxMin{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+#chatBoxMin #messageRecu{
+    background-color: #1ac74d;
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid white;
+}
+#chatBoxMin img{
+    height: 60px;
+}

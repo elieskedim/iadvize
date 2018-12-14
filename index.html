@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ibbü</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/chatbox.css" />
+</head>
+<body>
+    <div id="chatBox">
+        <header>
+            <div id="titreDesktop">
+                <p>UN EXPERT <span>IBBÜ</span>  VOUS RÉPOND</p>
+            </div>
+            <i class="fas fa-angle-down chatBoxMinBtn"></i>
+
+            <div id="blocProfile">
+                <img id="imgProfileTop" src="assets/img/profile.png" alt="Image de profile utilisateur" />
+                <img class="imgProfile" src="assets/img/profile.png" alt="Image de profile utilisateur" />
+            </div><!-- Fin div blocProfile -->
+            <i class="fas fa-minus chatBoxMinBtn"></i>
+            <i id="chatBoxClose" class="fas fa-times"></i>
+        </header>
+
+        <section>
+            <div class="messageAuto">
+                <p class="contenu"> Veuillez saisir votre message ci-dessous, un de nos experts vous répondra en direct dans les plus brefs délais.</p>
+                <p class="heure">17:16</p>
+            </div>
+
+            <div class="blocUtilisateur">
+                <div class="messageUtilisateur">
+                    <h3>Vous :</h3>
+                    <p class="contenu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <p class="heure">17:16</p>
+            </div>
+
+            <div class="messageAuto">
+                <p class="contenu"> Un expert de la communauté ibbü va vous répondre. Il répond à vos questions de manière volontaire, en tant qu'expert indépendant non salarié.</p>
+                <p class="heure">17:16</p>
+            </div>
+
+            <div class="blocReponse">
+                <img src="assets/img/expert.png" alt="Image de profile Expert" />
+                <div class="messageUtilisateur">
+                    <div class="headerBlocReponse">
+                        <h3>Kilian :</h3>
+                        <span class="heure">17:16</span>
+                    </div>
+                    <p class="contenu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            
+            <span id="writeDesktop">
+                Un expert est en train d'écrire...
+            </span>
+            <span id="writeMobile">
+                <img src="assets/img/bubble.png" alt="image qui indique une réponse en cours" />
+            </span>
+        </section>
+
+        <footer><!-- Section envoie Message -->
+            <form action="#" method="POST">
+                <input id="message" type="text" placeholder="Posez votre question">
+                <button id="send"><i class="fab fa-telegram-plane"></i></button>
+            </form>
+        </footer>
+    </div><!-- Fin de la div chatBox -->
+
+    <div id="chatBoxMin"><!-- Chat Box minifier -->
+        <span id="messageRecu">
+            <i class="fas fa-comments"></i>
+        </span>
+        <img class="imgProfile" src="assets/img/profile.png" alt="Image de profile utilisateur" />
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="assets/js/chatBox.js"></script>
+</body>
+</html>
